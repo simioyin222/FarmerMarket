@@ -1,13 +1,13 @@
-import React, {useContext} from "react"
-import {MarketContext} from "./MarketContext"
+import React, { useContext } from 'react';
+import { MarketContext } from '../contexts/MarketContext';
 
 function MarketList() {
-  const [markets, setMarkets] = useContext(MarketContext)
+  const [markets, setMarkets] = useContext(MarketContext);
 
-  const deleteMarket = day => {
-    const updatedMarkets = markets.filter(market => market.day !== day)
-    setMarkets(updatedMarkets)
-  }
+  const deleteMarket = (day) => {
+    const updatedMarkets = markets.filter(market => market.day !== day);
+    setMarkets(updatedMarkets);
+  };
 
   return (
     <div>
@@ -18,7 +18,7 @@ function MarketList() {
         </div>
       ))}
     </div>
-  )
+  );
 }
 
-export default MarketList
+export default MarketList;

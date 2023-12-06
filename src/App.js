@@ -1,6 +1,6 @@
 import React from 'react';
 import { MarketProvider } from './contexts/MarketContext';
-import { ProduceProvider } from './contexts/ProduceContext'; 
+import { ProduceProvider } from './contexts/ProduceContext';
 import MarketSchedule from './components/MarketSchedule';
 import ProduceAvailability from './components/ProduceAvailability';
 import MarketForm from './components/MarketForm';

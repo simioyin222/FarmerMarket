@@ -31,9 +31,6 @@ function MarketForm() {
 }
 
 export default MarketForm;
-MarketList.js (for Read and Delete)
-javascript
-Copy code
 import React, { useContext } from 'react';
 import { MarketContext } from './MarketContext';
 
