@@ -9,13 +9,16 @@ import './App.css';
 
 function App() {
   return (
-    <
-    <div className="App">
-      <h1>Avery's Organics</h1>
-      <MarketSchedule />
-      <ProduceAvailability />
-    </div>
+    <MarketProvider>
+      <ProduceProvider>
+        <div className="App">
+          <h1>Avery's Organics</h1>
+          <MarketForm />
+          <MarketList />
+          <MarketSchedule />
+          <ProduceAvailability />
+        </div>
+      </ProduceProvider>
+    </MarketProvider>
   );
 }
-
-export default App;
