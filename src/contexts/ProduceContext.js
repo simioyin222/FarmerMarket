@@ -7,6 +7,8 @@ export const ProduceProvider = props => {
   const [produce, setProduce] = useState(ProduceAvailability);
 
   return (
-    
-  )
-}
+    <ProduceContext.Provider value={[produce, setProduce]}>
+      {props.children}
+    </ProduceContext.Provider>
+  );
+};
