@@ -22,3 +22,5 @@ function App() {
     </MarketProvider>
   );
 }
+
+export default App;
